@@ -10,8 +10,8 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to user
     else
-      return head(:forbidden)
-      
+      return head(hello)
+      redirect_to login_path
     end
   end
 
