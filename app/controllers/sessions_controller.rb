@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       redirect_to user
     else
       return head(:forbidden)
-      redirect_to login_path
+      
     end
   end
 
